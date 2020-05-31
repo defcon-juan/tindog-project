@@ -54,6 +54,28 @@ h6 {
   text-align: left;
 }
 
+/* --------MEDIA QUERY BREAKPOINT---------------
+ changes the image rotation and position
+ and text align when the 
+ VIEWPORT goes lower than 990px (the breakpoint)
+
+*/
+
+@media (max-width: 990px) {
+  #title .container-fluid {
+    text-align: center;
+  }
+
+  .dog-image {
+    position: static;
+    transform: rotate(0);
+    width: 60%;
+  }
+
+
+}
+
+
 .navbar {
   padding: 0 0 3rem;
 }
@@ -80,24 +102,6 @@ h6 {
   margin: 5% 3% 5% 0;
 }
 
-/* --------MEDIA QUERY BREAKPOINT---------------
- changes the image rotation and position
- and text align when the 
- VIEWPORT goes lower than 990px (the breakpoint)
-
-*/
-
-@media (max-width: 990px) {
-  .dog-image {
-    position: static;
-    transform: rotate(0);
-    width: 60%;
-  }
-
-  #title {
-    text-align: center;
-  }
-}
 
 /* ----------------------------FEATURES---------------------- */
 #features {
